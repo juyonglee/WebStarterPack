@@ -1,6 +1,6 @@
 # 5.단위, 배경, 박스모델
 ## 5.1. boxmodel
-![Boxmodel Image](./Boxmodel.png)
+![Boxmodel Image](https://github.com/juyonglee/WebStarterPack/blob/master/Images/Boxmodel.png)
 
 HTML의 모든 요소는 **사각형의 박스 형태**로 만들어집니다. 박스는 총 4가지의 세분된 영역으로 구성되어있으며 영역마다 다양한 스타일을 적용할 수 있습니다.
 
