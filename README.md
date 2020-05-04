@@ -22,3 +22,48 @@ HTML의 모든 요소는 **사각형의 박스 형태**로 만들어집니다. �
     - border 바깥쪽의 영역을 margin이라고 합니다. 
     - border 영역을 다른 요소와 구별하기 위해 쓰이는 빈 영역입니다.
     - 즉, 주변 요소와의 여백(간격)을 margin을 이용해 지정할 수 있습니다.
+
+<hr>
+
+## 5.2. border
+border 속성은 요소의 **`테두리`** 에 관련된 속성을 지정할 때 사용합니다. 테두리의 굵기, 모양, 색상을 지정할 수 있는 속성들이 있습니다.
+
+### border 관련 속성
+1. border-width: 선의 굵기를 지정하는 속성
+    - Default Value: `medium`
+    - border-top-width
+    - border-bottom-width
+    - border-right-width
+    - border-left-width
+    ```css
+    border-width: [top] [right] [bottom] [left];
+    ```
+
+2. border-style: 선의 모양을 지정하는 속성
+    - Default Value: `none`
+    - border-top-style
+    - border-bottom-style
+    - border-right-style
+    - border-left-style
+    ```css
+    border-style: [top] [right] [bottom] [left];
+    ```
+
+3. border-color
+    - Default Value: `currentColor`
+        - CSS3에서 도입된 개념으로 currentColor가 설정되면, color가 상속됩니다.
+    - border-top-color
+    - border-bottom-color
+    - border-right-color
+    - border-left-color
+    ```css
+    border-color: [top] [right] [bottom] [left];
+    ```
+### border 축약
+```css
+border: [-width] [-style] [-color];
+```
+`공백`으로 구분해 축약하여 사용할 수 있고, 정의되지 않은 속성값에 대해서는 기본값이 적용됩니다.
+ 
+### border 예제
+![Border Style Example](https://github.com/juyonglee/WebStarterPack/blob/master/Images/BorderStyle.png)
