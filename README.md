@@ -67,3 +67,25 @@ border: [-width] [-style] [-color];
  
 ### border 예제
 ![Border Style Example](https://github.com/juyonglee/WebStarterPack/blob/master/Images/BorderStyle.png)
+
+<hr>
+
+## 5.3. Padding
+padding 영역은 border와 content 사이의 여백입니다. 속성의 순서는 고정되어있으며, 위쪽을 기준으로 `시계방향`으로 돌아간다고 생각하면 쉽습니다. 또한 padding의 기본 값은 `0`입니다.
+1. padding-top
+2. padding-right
+3. padding-bottom
+4. padding-left 
+
+```css
+padding: [-top] [-right] [-bottom] [-left];
+            /* [Case1] 상, 우, 하, 좌 다른 경우 */
+            0      10px     20px      30px
+            /* [Case2] 좌, 우 같은 경우 */
+            0      10px     20px
+            /* [Case3] 상, 하 & 좌, 우 같은 경우 */
+            0      10px
+            /* [Case4] 상, 우, 하, 좌 모두 같은 경우 */
+            0                                
+```
+ 
