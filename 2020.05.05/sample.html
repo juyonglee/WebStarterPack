@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility Sample</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div > img {
+            padding-right: 15px;
+        }
+        .container {
+            border: 2px dotted black;
+        }
+        .container > div:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        .container > div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+        .cardContainer > div {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardContainer" style="border: 1px outset red; padding: 20px; background-color: yellow; text-align: center;">
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: tomato; text-align: center; display: inline-block; color: white;">Tomato</div>
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: orange; text-align: center; display: inline-block; color: white;">Orange</div>
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: dodgerblue; text-align: center; display: inline-block; color: white;">DodgerBlue</div>
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: tomato; text-align: center; display: inline-block; color: white;">Tomato</div>
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: orange; text-align: center; display: inline-block; color: white;">Orange</div>
+        <div style="width: 200px; height: 100px; line-height: 100px; background-color: dodgerblue; text-align: center; display: inline-block; color: white;">DodgerBlue</div>
+    </div>
+    <div style="background: pink; padding: 40px; visibility: visible;">
+        <img src="https://placedog.net/320/320?id=94"/>
+        <img src="https://placedog.net/320/320?id=2"/>
+        <img src="https://placedog.net/320/320?id=3"/>
+        <img src="https://placedog.net/320/320?id=4"/>
+    </div>
+    <div style="background: yellow; padding: 40px;">
+        <img src="https://placedog.net/320/320?id=5"/>
+        <img src="https://placedog.net/320/320?id=6"/>
+        <img src="https://placedog.net/320/320?id=7"/>
+        <img src="https://placedog.net/320/320?id=8"/>
+    </div>
+    <div class="container">
+        <div style="float: left;">Box01</div>
+        <div style="clear: both;">Box02</div>
+    </div>
+</body>
+</html>
